@@ -1,0 +1,12 @@
+{
+  "preset": "wordpress",
+  "fileExtensions": [ ".js" ],
+  "excludeFiles": [
+	"assets/css/admin.min.css.map",
+	"assets/css/frontend.min.css.map",
+	"assets/css/admin.min.css",
+    "assets/js/cherry-api.min.js",
+    "assets/js/admin.min.js",
+	"assets/js/frontend.min.js"
+  ]
+}

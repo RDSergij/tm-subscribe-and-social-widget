@@ -1,0 +1,34 @@
+/*
+* @section Widget form
+*/
+.tm-subscribe-and-share-widget {
+	clear: both;
+	width: 100%;
+	margin-bottom: 10px;
+
+	.social-area {
+		border: #dfdfdf dashed 1px;
+		padding: 5px;
+		margin-bottom: 5px;
+		background-color: white;
+		position: relative;
+
+		.delete-social {
+			cursor: pointer;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			color: red;
+		}
+	}
+
+	.social-new {
+		display: none;
+	}
+
+	.add-social {
+		cursor: pointer;
+		float: right;
+		color: green;
+	}
+}

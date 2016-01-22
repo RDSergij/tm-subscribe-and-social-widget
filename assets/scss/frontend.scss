@@ -1,0 +1,85 @@
+.tm-subscribe-and-share-widget {
+	padding: 10px;
+
+	/*
+	* @section Subscribe
+	*/
+
+	.description {
+		font-style: italic;
+	}
+
+	.form {
+		form {
+			width: 80%;
+		}
+
+		input[type=email] {
+			width: 80%;
+			height: 40px;
+			border-radius: 5px 0 0 5px;
+			border: 1px solid #000;
+			border-right: 0;
+			float: left;
+		}
+
+		input[type=image] {
+			height: 40px;
+			border-radius: 0 5px 5px 0;
+			border: 1px solid #000;
+			border-left: 0;
+			float: left;
+		}
+
+		&:after {
+			visibility: hidden;
+			display: block;
+			content: "";
+			clear: both;
+			height: 0;
+		}
+
+		.message {
+			&:before {
+				visibility: hidden;
+				display: block;
+				content: "";
+				clear: both;
+				height: 0;
+			}
+
+			.success {
+				color: green;
+				display: none;
+			}
+
+			.failed {
+				color: orangered;
+				display: none;
+			}
+		}
+	}
+
+	/*
+	* @section Social
+	*/
+
+	.socials {
+		a {
+			background:#006699;
+			color: #fff;
+			padding: 5px;
+			border-radius: 5px;
+			margin: 5px;
+
+			.fa {
+				width: 30px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+[web-icon=true]:before {
+	content: "\f0ac";
+}
