@@ -48,6 +48,7 @@ class MailChimp
 
 	/**
 	 * Create a new instance
+	 *
 	 * @param  string $api_key ApiKey.
 	 * @return void
 	 */
@@ -69,6 +70,7 @@ class MailChimp
 
 	/**
 	 * Call an API method. Every request needs the API key, so that is added automatically -- you don't need to pass it in.
+	 *
 	 * @param  string $method The API method to call, e.g. 'lists/list'.
 	 * @param  array  $args   An array of arguments to pass to the method. Will be json-encoded for you.
 	 * @return array          Associative array of json decoded API response.
@@ -79,6 +81,7 @@ class MailChimp
 
 	/**
 	 * Performs the underlying HTTP request. Not very exciting
+	 *
 	 * @param  string $method Api Method.
 	 * @param  array  $args Api parameters.
 	 * @return array

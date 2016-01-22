@@ -46,6 +46,12 @@ if ( ! class_exists( 'TM_Subscribe_And_Social_Widget' ) ) {
 		 * @var type array
 		 */
 		private $instance_default = array();
+
+		/**
+		 * Socials list
+		 *
+		 * @var type array
+		 */
 		private $social_list = array( 'twitter', 'facebook', 'google-plus', 'vk', 'instagram', 'pinterest', 'youtube', 'linkedin' );
 		/**
 		 * Register widget with WordPress.
@@ -63,8 +69,8 @@ if ( ! class_exists( 'TM_Subscribe_And_Social_Widget' ) ) {
 				'subscribe_description'		=> __( 'Subscribe description', PHOTOLAB_BASE_TM_ALIAS ),
 				'api_key'					=> '',
 				'list_id'					=> '',
-				'success_message'			=> __('Success', PHOTOLAB_BASE_TM_ALIAS),
-				'failed_message'			=> __('Failed', PHOTOLAB_BASE_TM_ALIAS),
+				'success_message'			=> __( 'Success', PHOTOLAB_BASE_TM_ALIAS ),
+				'failed_message'			=> __( 'Failed', PHOTOLAB_BASE_TM_ALIAS ),
 
 				'social_is'					=> 'true',
 				'social_title'				=> __( 'Social title', PHOTOLAB_BASE_TM_ALIAS ),

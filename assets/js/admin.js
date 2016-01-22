@@ -53,15 +53,14 @@ function initWidgetSubscribeAndSocial() {
 		social.before( socialNew );
 		socials.attr( 'count', socialsCount );
 		socialNew.toggleClass( 'social-area social-new' );
-		
+
 		socialNew.find( 'input' ).each( function() {
 			var _inputItem = jQuery( this );
 			var name = _inputItem.attr( 'name' );
-			console.log(name);
 			name = name.replace( '_new', '' );
 			_inputItem.attr( 'name', name );
 		});
-		
+
 		socialNew.find( 'h3 span' ).html( socialsCount );
 		reNumberSubscribeAndSocial( socials );
 		reInitWidgetSubscribeAndSocial();

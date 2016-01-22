@@ -1,5 +1,5 @@
 jQuery( document ).ready( function() {
-	jQuery( '.tm-subscribe-and-share-widget .form form ').submit( function( e ){
+	jQuery( '.tm-subscribe-and-share-widget .form form' ).submit( function( e ) {
 		var _this = jQuery( this );
 		var emailInput = _this.find( 'input[type=email]' );
 		var _messages = _this.parent().find( '.message' );
@@ -8,7 +8,7 @@ jQuery( document ).ready( function() {
 		jQuery.post( window.TMSubscribeAndShareWidgetParam.ajaxurl, data, function( response ) {
 			var _messageItem = _messages.find( '.' + response.status );
 			_messageItem.show( 'slow' ).delay( 3000 ).fadeOut( function() {
-				emailInput.val('');
+				emailInput.val( '' );
 			});
 		 } )
 		.fail( function( response ) {

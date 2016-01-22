@@ -47,9 +47,9 @@ if ( ! defined( 'WPINC' ) ) {
 		<div class="description">
 			<?php echo $social_description ?>
 		</div>
-		<?php if ( ! empty ( $social_buttons ) ) : ?>
+		<?php if ( ! empty( $social_buttons ) ) : ?>
 		<?php foreach ( $social_buttons as $social ) : ?>
-		<?php if ( ! empty ( $social['url'] ) && ! empty ( $social['service'] ) ) : ?>
+		<?php if ( ! empty( $social['url'] ) && ! empty( $social['service'] ) ) : ?>
 		<a href="<?php echo $social['url'] ?>">
 			<i web-icon="true" class="fa fa-<?php echo strtolower( $social['service'] ) ?>"><!--&#128279;--></i>
 		</a>
