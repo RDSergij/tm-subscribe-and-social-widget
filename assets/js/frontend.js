@@ -11,7 +11,7 @@ jQuery( document ).ready( function() {
 				emailInput.val( '' );
 			});
 		 } )
-		.fail( function( response ) {
+		.fail( function() {
 			var _messageItem = _messages.find( '.failed' );
 			_messageItem.show( 'slow' ).delay( 3000 ).fadeOut();
 		} );
