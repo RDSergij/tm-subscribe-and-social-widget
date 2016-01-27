@@ -59,22 +59,22 @@ if ( ! class_exists( 'TM_Subscribe_And_Social_Widget' ) ) {
 		function __construct() {
 			parent::__construct(
 				'tm_subscribe_and_social_widget', // Base ID
-				__( 'TM Subscribe and Social Widget', PHOTOLAB_BASE_TM_ALIAS ),
+				__('TM Subscribe and Social Widget', PHOTOLAB_BASE_TM_ALIAS ),
 				array( 'description' => __( 'MailChimp subscribe and social link section widget', PHOTOLAB_BASE_TM_ALIAS ) )
 			);
 			// Set default settings
 			$this->instance_default = array(
 				'subscribe_is'				=> 'true',
-				'subscribe_title'			=> __( 'Subscribe title', PHOTOLAB_BASE_TM_ALIAS ),
-				'subscribe_description'		=> __( 'Subscribe description', PHOTOLAB_BASE_TM_ALIAS ),
+				'subscribe_title'			=> __( '', PHOTOLAB_BASE_TM_ALIAS ),
+				'subscribe_description'		=> __( '', PHOTOLAB_BASE_TM_ALIAS ),
 				'api_key'					=> '',
 				'list_id'					=> '',
 				'success_message'			=> __( 'Success', PHOTOLAB_BASE_TM_ALIAS ),
 				'failed_message'			=> __( 'Failed', PHOTOLAB_BASE_TM_ALIAS ),
 
 				'social_is'					=> 'true',
-				'social_title'				=> __( 'Social title', PHOTOLAB_BASE_TM_ALIAS ),
-				'social_description'		=> __( 'Social description', PHOTOLAB_BASE_TM_ALIAS ),
+				'social_title'				=> __( '', PHOTOLAB_BASE_TM_ALIAS ),
+				'social_description'		=> __( '', PHOTOLAB_BASE_TM_ALIAS ),
 				'social_buttons'			=> array(),
 			);
 
@@ -306,7 +306,7 @@ if ( ! class_exists( 'TM_Subscribe_And_Social_Widget' ) ) {
 						'id'			=> $this->get_field_id( 'social_description' ),
 						'name'			=> $this->get_field_name( 'social_description' ),
 						'value'			=> $social_description,
-						'label'			=> __( 'social description', PHOTOLAB_BASE_TM_ALIAS ),
+						'label'			=> __( 'Social description', PHOTOLAB_BASE_TM_ALIAS ),
 						'placeholder'	=> __( 'social description', PHOTOLAB_BASE_TM_ALIAS ),
 					)
 			);
@@ -384,7 +384,7 @@ if ( ! class_exists( 'TM_Subscribe_And_Social_Widget' ) ) {
 	 * Register widget
 	 */
 	function register_tm_subscribe_and_social_widget() {
-		register_widget( 'tm_subscribe_and_social_widget' );
+		register_widget( 'TM_Subscribe_And_Social_Widget' );
 	}
 	add_action( 'widgets_init', 'register_tm_subscribe_and_social_widget' );
 
