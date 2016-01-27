@@ -59,7 +59,7 @@ if ( ! class_exists( 'TM_Subscribe_And_Social_Widget' ) ) {
 		function __construct() {
 			parent::__construct(
 				'tm_subscribe_and_social_widget', // Base ID
-				__('TM Subscribe and Social Widget', PHOTOLAB_BASE_TM_ALIAS ),
+				__( 'TM Subscribe and Social Widget', PHOTOLAB_BASE_TM_ALIAS ),
 				array( 'description' => __( 'MailChimp subscribe and social link section widget', PHOTOLAB_BASE_TM_ALIAS ) )
 			);
 			// Set default settings
