@@ -14,6 +14,6 @@
 .tm-subscribe-and-share-widget .socials a { background: #006699; color: #fff; padding: 5px; border-radius: 5px; margin: 5px; }
 .tm-subscribe-and-share-widget .socials a .fa { width: 30px; text-align: center; }
 
-[web-icon=true]:before { content: "\f0ac"; }
+[data-web-icon=true]:before { content: "\f0ac"; }
 
 /*# sourceMappingURL=frontend.min.css.map */
